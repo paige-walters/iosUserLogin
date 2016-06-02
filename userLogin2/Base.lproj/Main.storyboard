@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userLogin2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-c2-JQf">
+                                <rect key="frame" x="20" y="247" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-ov-TLJ">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUK-kU-Lpa">
+                                <rect key="frame" x="20" y="323" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="Pmx-nV-RJO"/>
+                                    <constraint firstAttribute="height" constant="30" id="ddR-Ln-0Xi"/>
+                                </constraints>
+                                <state key="normal" title="Login/Create User"/>
+                                <connections>
+                                    <action selector="CreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yR-mO-GWu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="N3W-ov-TLJ" secondAttribute="trailing" id="27U-cG-rgC"/>
+                            <constraint firstItem="N3W-ov-TLJ" firstAttribute="top" secondItem="HDQ-c2-JQf" secondAttribute="bottom" constant="8" id="3iJ-fn-jbq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HDQ-c2-JQf" secondAttribute="trailing" id="Dne-UT-lef"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HDQ-c2-JQf" secondAttribute="leading" id="OXJ-WJ-UiV"/>
+                            <constraint firstItem="N3W-ov-TLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RbY-Ag-wqp"/>
+                            <constraint firstItem="hUK-kU-Lpa" firstAttribute="top" secondItem="N3W-ov-TLJ" secondAttribute="bottom" constant="8" id="SwU-YA-zMu"/>
+                            <constraint firstItem="hUK-kU-Lpa" firstAttribute="centerX" secondItem="N3W-ov-TLJ" secondAttribute="centerX" id="ZCX-xd-TvQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="N3W-ov-TLJ" secondAttribute="leading" id="edZ-N9-eX7"/>
+                            <constraint firstItem="N3W-ov-TLJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="icK-xI-DpV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Password" destination="N3W-ov-TLJ" id="0m0-YI-MMB"/>
+                        <outlet property="Username" destination="HDQ-c2-JQf" id="iox-6F-FE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
